@@ -35,7 +35,7 @@ import Layout from '../layouts/Layout.astro';
 		<section class="portfolio-section" id="mobile">
 			<h2 class="section-title">Aplicaciones Móviles</h2>
 			<div class="portfolio-grid">
-				<div class="card project-card">
+				<div class="card project-card show">
 					<div class="project-image">
 						<img src="https://a.storyblok.com/f/47007/1600x1239/3959485e71/aso-ranking-factors.png" alt="App de Cuidado Animal" />
 					</div>
@@ -51,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 
-				<div class="card project-card">
+				<div class="card project-card show">
 					<div class="project-image">
 						<img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=E-Commerce+App" alt="App de Comercio" />
 					</div>
@@ -65,42 +65,187 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<!-- Web Projects Section -->
-		<section class="portfolio-section" id="web">
-			<h2 class="section-title">Desarrollo Web</h2>
-			<div class="portfolio-grid">
-				<div class="card project-card">
-					<div class="project-image">
-						<img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Dashboard" alt="Dashboard Web" />
-					</div>
-					<div class="project-content">
-						<h3>Dashboard Analytics</h3>
-						<p>Panel de control para análisis de datos empresariales</p>
-						<div class="tech-stack">
-							<span class="tech-tag">React</span>
-							<span class="tech-tag">Node.js</span>
+					
+				<div class="card project-card hide toggleable">
+						<div class="project-image">
+							<img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=E-Commerce+App" alt="App de Comercio" />
 						</div>
-					</div>
+						<div class="project-content">
+							<h3>App de E-Commerce 2</h3>
+							<p>Plataforma de comercio electrónico con sistema de pagos integrado</p>
+							<div class="tech-stack">
+								<span class="tech-tag">Flutter</span>
+								<span class="tech-tag">Firebase</span>
+								<span class="tech-tag">Google Map</span>
+							</div>
+						</div>
 				</div>
-
-				<div class="card project-card">
-					<div class="project-image">
-						<img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=E-Learning" alt="Plataforma E-Learning" />
-					</div>
-					<div class="project-content">
-						<h3>Plataforma E-Learning</h3>
-						<p>Sistema de gestión de aprendizaje en línea</p>
-						<div class="tech-stack">
-							<span class="tech-tag">Vue.js</span>
-							<span class="tech-tag">Firebase</span>
-						</div>
-					</div>
+				
+				<div class="load-buttons">
+					<button class="load-more">Ver más</button>
+					<button class="load-less hidden">Ver menos</button>
 				</div>
 			</div>
+			
 		</section>
+
+	<!-- Web Projects Section -->
+<section class="portfolio-section" id="web">
+    <h2 class="section-title">Desarrollo Web</h2>
+    <div class="portfolio-grid">
+        <!-- Ian Agency -->
+        <div class="card project-card show">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Ian+Agency" alt="Ian Agency Web" />
+            </div>
+            <div class="project-content">
+                <h3>Ian Agency</h3>
+                <p>Agencia de publicidad y marketing digital</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">WordPress</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- HYCAN Costa Rica -->
+        <div class="card project-card show">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=HYCAN+CR" alt="HYCAN Costa Rica Web" />
+            </div>
+            <div class="project-content">
+                <h3>HYCAN Costa Rica</h3>
+                <p>Páginas web para vehículos de celda de combustible de hidrógeno</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">WordPress</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foton CR -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Foton+CR" alt="Foton Costa Rica Web" />
+            </div>
+            <div class="project-content">
+                <h3>Foton Costa Rica</h3>
+                <p>Página web para importación de vehículos</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">WordPress</span>
+                    <span class="tech-tag">WooCommerce</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RMP TV -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=RMP+TV" alt="RMP TV Web" />
+            </div>
+            <div class="project-content">
+                <h3>RMP TV</h3>
+                <p>Plataforma de streaming y entretenimiento</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sislocar -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Sislocar" alt="Sislocar Web" />
+            </div>
+            <div class="project-content">
+                <h3>Sislocar</h3>
+                <p>Sistema de gestión de flotas y logística</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quimiagro CR -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Quimiagro+CR" alt="Quimiagro Costa Rica Web" />
+            </div>
+            <div class="project-content">
+                <h3>Quimiagro CR</h3>
+                <p>Página web corporativa para empresa de productos químicos</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">WordPress</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Somos Bretano -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Somos+Bretano" alt="Somos Bretano Web" />
+            </div>
+            <div class="project-content">
+                <h3>Somos Bretano</h3>
+                <p>Página web corporativa para empresa de seguros</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">WordPress</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Q Empresarial CR -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Q+Empresarial+CR" alt="Q Empresarial Costa Rica Web" />
+            </div>
+            <div class="project-content">
+                <h3>Q Empresarial CR</h3>
+                <p>Plataforma empresarial para gestión de negocios</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCP -->
+        <div class="card project-card hide toggleable">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=SCP" alt="SCP Web" />
+            </div>
+            <div class="project-content">
+                <h3>SCP</h3>
+                <p>Página web corporativa para servicios profesionales</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">WordPress</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+            </div>
+        </div>
+    
+	<div class="load-buttons">
+		<button class="load-more">Ver más</button>
+		<button class="load-less hidden">Ver menos</button>
+
+	</div>
+
+
+</section>
+
 
 		<!-- Contact Section -->
 		<section class="contact-section" id="contact">
@@ -129,6 +274,73 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+  /* Ocultar tarjetas adicionales */
+	.portfolio-grid .hide {
+		display: none;
+	}
+
+	/* Mostrar tarjetas al hacer click en "Ver más" */
+	.portfolio-grid .show {
+		display: block;
+	}
+
+/* Contenedor de botones: se establece posición relativa y una altura fija */
+.load-buttons {
+  position: relative;
+  height: 3rem;  /* Puedes ajustar este valor según el alto de tus botones */
+  margin-top: 2rem;
+}
+
+/* Estilos comunes para ambos botones */
+.load-buttons button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding: 1rem 2rem;
+  background-color: #7B68EE;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* Estado oculto: el botón se desplaza ligeramente hacia abajo, se hace transparente y no responde a eventos */
+.load-buttons button.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(10px);
+  pointer-events: none;
+}
+
+/* Hover para ambos botones */
+.load-buttons button:hover {
+  background-color: #6b5ecd;
+}
+
+
+	.portfolio-grid > .load-buttons {
+	grid-column: 1 / -1;
+	}
+
+	.load-more, .load-less {
+		padding: 1rem 2rem;
+		background-color: #7B68EE;
+		color: white;
+		border: none;
+		border-radius: 25px;
+		cursor: pointer;
+		font-size: 1.1rem;
+		transition: background-color 0.3s ease;
+	}
+
+	.load-more:hover, .load-less:hover {
+		background-color: #6b5ecd;
+	}
+
+
+
   .email{
 		color:#fff;
 		text-decoration:none;
@@ -236,9 +448,31 @@ import Layout from '../layouts/Layout.astro';
 		gap: 2rem;
 	}
 
+	/* Animación para las tarjetas de proyectos */
 	.project-card {
-		overflow: hidden;
-		transition: transform 0.3s ease;
+	opacity: 1;
+	transform: translateY(0);
+	max-height: 1000px; /* Valor suficientemente grande para mostrar el contenido */
+	margin-bottom: 1rem;
+	overflow: hidden;
+	transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease, margin 0.5s ease;
+	}
+
+	/* Estado oculto: se oculta, se desplaza y colapsa */
+	.project-card.hide {
+	opacity: 0;
+	transform: translateY(20px);
+	max-height: 0;
+	margin-bottom: 0;
+	pointer-events: none;
+	}
+
+	/* Estado visible explícito */
+	.project-card.show {
+	opacity: 1;
+	transform: translateY(0);
+	max-height: 1000px;
+	margin-bottom: 1rem;
 	}
 
 	.project-card:hover {
@@ -379,3 +613,45 @@ import Layout from '../layouts/Layout.astro';
 		}
 	}
 </style>
+<script>
+	// Al hacer click en "Ver más"
+	document.querySelectorAll('.load-more').forEach(button => {
+	  button.addEventListener('click', function() {
+		const section = this.closest('.portfolio-section');
+		const grid = section.querySelector('.portfolio-grid');
+		// Selecciona las tarjetas toggleable que estén ocultas
+		const hiddenCards = grid.querySelectorAll('.toggleable.hide');
+		
+		hiddenCards.forEach(card => {
+		  card.classList.remove('hide');
+		  card.classList.add('show');
+		});
+		
+		// Oculta el botón "Ver más" y muestra el "Ver menos" mediante clases
+		this.classList.add('hidden');
+		const loadLessButton = section.querySelector('.load-less');
+		loadLessButton.classList.remove('hidden');
+	  });
+	});
+	
+	// Al hacer click en "Ver menos"
+	document.querySelectorAll('.load-less').forEach(button => {
+	  button.addEventListener('click', function() {
+		const section = this.closest('.portfolio-section');
+		const grid = section.querySelector('.portfolio-grid');
+		// Selecciona todas las tarjetas toggleable
+		const toggleableCards = grid.querySelectorAll('.toggleable');
+		
+		toggleableCards.forEach(card => {
+		  card.classList.add('hide');
+		  card.classList.remove('show');
+		});
+		
+		// Oculta el botón "Ver menos" y muestra el "Ver más"
+		this.classList.add('hidden');
+		const loadMoreButton = section.querySelector('.load-more');
+		loadMoreButton.classList.remove('hidden');
+	  });
+	});
+  </script>
+   
