@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
 				<span class="label">Sobre Mi</span>
 				<div class="profile-content">
 					<div class="profile-image">
-						<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80" alt="Profile" />
+						<img src="/images/perfil-Cristhian-Flores.jpeg" alt="Profile" />
 					</div>
 					<div class="profile-text">
 						<h1>Cristhian<br/>Flores</h1>
@@ -35,53 +35,50 @@ import Layout from '../layouts/Layout.astro';
 		<section class="portfolio-section" id="mobile">
 			<h2 class="section-title">Aplicaciones Móviles</h2>
 			<div class="portfolio-grid">
-				<div class="card project-card show">
-					<div class="project-image">
-						<img src="https://a.storyblok.com/f/47007/1600x1239/3959485e71/aso-ranking-factors.png" alt="App de Cuidado Animal" />
-					</div>
-					<div class="project-content">
-						<h3>App de Cuidado Animal</h3>
-						<p>Aplicación móvil para la gestión integral de servicios veterinarios</p>
-						<div class="tech-stack">
-								<span class="tech-tag">Flutter</span>
-								<span class="tech-tag">Firebase</span>
-								<span class="tech-tag">Google Map</span>
+				
 
-						</div>
-					</div>
-				</div>
-
+				<!-- Cuidado Animal -->
 				<div class="card project-card show">
-					<div class="project-image">
-						<img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=E-Commerce+App" alt="App de Comercio" />
-					</div>
-					<div class="project-content">
-						<h3>App de E-Commerce</h3>
-						<p>Plataforma de comercio electrónico con sistema de pagos integrado</p>
-						<div class="tech-stack">
-								<span class="tech-tag">Flutter</span>
-								<span class="tech-tag">Firebase</span>
-								<span class="tech-tag">Google Map</span>
-						</div>
-					</div>
-				</div>
-					
-				<div class="card project-card hide toggleable">
+					<a href="" class="card-link" target="_blank" rel="noopener noreferrer">
 						<div class="project-image">
-							<img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=E-Commerce+App" alt="App de Comercio" />
+							<img src="/images/cuidado-animal.png" alt="Magna Medica Web" />
 						</div>
 						<div class="project-content">
-							<h3>App de E-Commerce 2</h3>
-							<p>Plataforma de comercio electrónico con sistema de pagos integrado</p>
+							<h3>App de Cuidado Animal</h3>
+							<p>Aplicación móvil para la gestión integral de servicios veterinarios</p>
+	
 							<div class="tech-stack">
-								<span class="tech-tag">Flutter</span>
-								<span class="tech-tag">Firebase</span>
-								<span class="tech-tag">Google Map</span>
+									<span class="tech-tag">Flutter</span>
+									<span class="tech-tag">Firebase</span>
+									<span class="tech-tag">Provider</span>
+									<span class="tech-tag">Google Map</span>
+
+
 							</div>
 						</div>
+					</a>
 				</div>
+
+				<!-- Quiz -->
+				<div class="card project-card show">
+					<a href="" class="card-link" target="_blank" rel="noopener noreferrer">
+						<div class="project-image">
+							<img src="/images/app_quiz.png" alt="Magna Medica Web" />
+						</div>
+						<div class="project-content">
+							<h3>App Quiz</h3>
+							<p>Aplicación móvil de aprendizaje</p>
+							<div class="tech-stack">
+									<span class="tech-tag">Flutter</span>
+									<span class="tech-tag">Firebase</span>
+							</div>
+						</div>
+					</a>
+				</div>
+					
 				
-				<div class="load-buttons">
+				
+				<div class="load-buttons hide">
 					<button class="load-more">Ver más</button>
 					<button class="load-less hidden">Ver menos</button>
 				</div>
@@ -93,148 +90,180 @@ import Layout from '../layouts/Layout.astro';
 <section class="portfolio-section" id="web">
     <h2 class="section-title">Desarrollo Web</h2>
     <div class="portfolio-grid">
-        <!-- Ian Agency -->
+        <!-- Magna Medica -->
         <div class="card project-card show">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Ian+Agency" alt="Ian Agency Web" />
-            </div>
-            <div class="project-content">
-                <h3>Ian Agency</h3>
-                <p>Agencia de publicidad y marketing digital</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">WordPress</span>
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                </div>
-            </div>
+			<a href="https://magnamedicacr.com/" class="card-link" target="_blank" rel="noopener noreferrer">
+				<div class="project-image">
+					<img src="/images/magna.png" alt="Magna Medica Web" />
+				</div>
+				<div class="project-content">
+					<h3>Magna Medica</h3>
+					<p>Pagina Web de Servicios Medicos perzonalizados y confiables.</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">CSS3</span>
+					</div>
+				</div>
+			</a>
+        </div>
+		<!-- Ian Agency -->
+        <div class="card project-card show">
+			<a href="https://ianagency.com/" class="card-link" target="_blank" rel="noopener noreferrer">
+				<div class="project-image">
+					<img src="/images/Ian-agency.png" alt="Ian Agency Web" />
+				</div>
+				<div class="project-content">
+					<h3>Ian Agency</h3>
+					<p>Agencia de publicidad y marketing digital</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">CSS3</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- HYCAN Costa Rica -->
-        <div class="card project-card show">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=HYCAN+CR" alt="HYCAN Costa Rica Web" />
-            </div>
-            <div class="project-content">
-                <h3>HYCAN Costa Rica</h3>
-                <p>Páginas web para vehículos de celda de combustible de hidrógeno</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">WordPress</span>
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                </div>
-            </div>
+        <div class="card project-card hide toggleable">
+			<a href="https://hycancostarica.com/a06-plus/" class="card-link" target="_blank" rel="noopener noreferrer">
+				<div class="project-image">
+					<img src="/images/img-portfolio-hycan.jpg" alt="HYCAN Costa Rica Web" />
+				</div>
+				<div class="project-content">
+					<h3>HYCAN Costa Rica</h3>
+					<p>Páginas web para vehículos de celda de combustible de hidrógeno</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">JavaScript</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- Foton CR -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Foton+CR" alt="Foton Costa Rica Web" />
-            </div>
-            <div class="project-content">
-                <h3>Foton Costa Rica</h3>
-                <p>Página web para importación de vehículos</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">WordPress</span>
-                    <span class="tech-tag">WooCommerce</span>
-                    <span class="tech-tag">JavaScript</span>
-                </div>
-            </div>
+			<a href="https://fotoncr.com/" class="card-link" target="_blank" rel="noopener noreferrer">
+			
+				<div class="project-image">
+					<img src="/images/Foton.png" alt="Foton Costa Rica Web" />
+				</div>
+				<div class="project-content">
+					<h3>Foton Costa Rica</h3>
+					<p>Página web para importación de vehículos</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">JavaScript</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- RMP TV -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=RMP+TV" alt="RMP TV Web" />
-            </div>
-            <div class="project-content">
-                <h3>RMP TV</h3>
-                <p>Plataforma de streaming y entretenimiento</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                </div>
-            </div>
+			<a href="https://www.rpmtv.net/" class="card-link" target="_blank" rel="noopener noreferrer">
+				<div class="project-image">
+					<img src="/images/rpmtv.png" alt="RMP TV Web" />
+				</div>
+				<div class="project-content">
+					<h3>RMP TV</h3>
+					<p>Plataforma de streaming y entretenimiento</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">JavaScript</span>
+
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- Sislocar -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Sislocar" alt="Sislocar Web" />
-            </div>
-            <div class="project-content">
-                <h3>Sislocar</h3>
-                <p>Sistema de gestión de flotas y logística</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Laravel</span>
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                </div>
-            </div>
+			<a href="https://sislocar.com/" class="card-link" target="_blank" rel="noopener noreferrer">
+			
+				<div class="project-image">
+					<img src="/images/sislocar.png" alt="Sislocar Web" />
+				</div>
+				<div class="project-content">
+					<h3>Sislocar</h3>
+					<p>Sistema de gestión de flotas y logística</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">JavaScript</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- Quimiagro CR -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Quimiagro+CR" alt="Quimiagro Costa Rica Web" />
-            </div>
-            <div class="project-content">
-                <h3>Quimiagro CR</h3>
-                <p>Página web corporativa para empresa de productos químicos</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">WordPress</span>
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                </div>
-            </div>
+			<a href="https://quimiagrocr.com/" class="card-link" target="_blank" rel="noopener noreferrer">
+				<div class="project-image">
+					<img src="/images/quimiagro.png" alt="Quimiagro Costa Rica Web" />
+				</div>
+				<div class="project-content">
+					<h3>Quimiagro CR</h3>
+					<p>Página web corporativa para empresa de productos químicos</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">CSS3</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- Somos Bretano -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Somos+Bretano" alt="Somos Bretano Web" />
-            </div>
-            <div class="project-content">
-                <h3>Somos Bretano</h3>
-                <p>Página web corporativa para empresa de seguros</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">WordPress</span>
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">MySQL</span>
-                </div>
-            </div>
+			<a href="https://somosbretano.com/" class="card-link" target="_blank" rel="noopener noreferrer">
+				<div class="project-image">
+					<img src="/images/bretano.png" alt="Somos Bretano Web" />
+				</div>
+				<div class="project-content">
+					<h3>Somos Bretano</h3>
+					<p>Página web corporativa para empresa de seguros</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">JavaScript</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- Q Empresarial CR -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Q+Empresarial+CR" alt="Q Empresarial Costa Rica Web" />
-            </div>
-            <div class="project-content">
-                <h3>Q Empresarial CR</h3>
-                <p>Plataforma empresarial para gestión de negocios</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                </div>
-            </div>
+			<a href="http://" class="card-link" target="_blank" rel="noopener noreferrer">
+			
+				<div class="project-image">
+					<img src="/images/q-empresarial.png" alt="Q Empresarial Costa Rica Web" />
+				</div>
+				<div class="project-content">
+					<h3>Q Empresarial CR</h3>
+					<p>Plataforma empresarial para gestión de negocios</p>
+					<div class="tech-stack">
+						<span class="tech-tag">WordPress</span>
+						<span class="tech-tag">JavaScript</span>
+					</div>
+				</div>
+			</a>
         </div>
 
         <!-- SCP -->
         <div class="card project-card hide toggleable">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=SCP" alt="SCP Web" />
-            </div>
-            <div class="project-content">
-                <h3>SCP</h3>
-                <p>Página web corporativa para servicios profesionales</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">WordPress</span>
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                </div>
-            </div>
+			<a href="http://" class="card-link" target="_blank" rel="noopener noreferrer">
+			
+				<div class="project-image">
+					<img src="/images/scp.png" alt="SCP Web" />
+				</div>
+				<div class="project-content">
+					<h3>SCP</h3>
+					<p>Página web corporativa para servicios profesionales</p>
+					<div class="tech-stack">
+						<span class="tech-tag">HTML5</span>
+						<span class="tech-tag">CSS3</span>
+						<span class="tech-tag">PHP</span>
+						<span class="tech-tag">JavaScript</span>
+					</div>
+				</div>
+			</a>
         </div>
     
 	<div class="load-buttons">
@@ -264,16 +293,27 @@ import Layout from '../layouts/Layout.astro';
 
 		<!-- Side Navigation -->
 		<nav class="side-nav">
-			<a href="#about">About Me</a>
-			<a href="#mobile">Mobile Apps</a>
+			<a href="#about">Sobre Mi</a>
+			<a href="#mobile">Apps Móviles</a>
 			<a href="#web">Web</a>
-			<a href="#contact">Contact</a>
+			<a href="#contact">Contacto</a>
 		</nav>
 	
 	</main>
 </Layout>
 
 <style>
+	.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+	}
+
+	.card-link:hover {
+		opacity: 0.9;
+		transition: opacity 0.3s ease;
+	}
+
   /* Ocultar tarjetas adicionales */
 	.portfolio-grid .hide {
 		display: none;
@@ -399,6 +439,7 @@ import Layout from '../layouts/Layout.astro';
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+
 	}
 
 	.profile-text h1 {
@@ -481,7 +522,7 @@ import Layout from '../layouts/Layout.astro';
 
 	.project-image {
 		width: 100%;
-		height: 250px;
+		height: 100%;
 		overflow: hidden;
 		border-radius: 12px;
 	}
@@ -489,7 +530,8 @@ import Layout from '../layouts/Layout.astro';
 	.project-image img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover
+		object-fit: cover;
+		border-radius: 12px;
 		}
 
 	.project-content {
